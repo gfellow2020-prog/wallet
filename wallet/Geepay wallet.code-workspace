@@ -1,8 +1,23 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.ignoredRepositories": [],
+		"files.watcherExclude": {
+			"**/node_modules/**": true,
+			"**/vendor/**": true
+		},
+		"files.exclude": {
+			"**/node_modules": true,
+			"**/vendor": true
+		},
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/vendor": true
+		},
+		"scm.defaultViewMode": "tree"
+	}
 }
