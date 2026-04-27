@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "ExtraCash Mobile",
+    "slug": "extracash-mobile",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "ExtraCash uses your location to show products near you.",
+          "locationWhenInUsePermission": "ExtraCash uses your location to show products near you."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "ExtraCash uses your camera to scan QR codes for payments."
+        }
+      ],
+      "expo-font"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "ExtraCash uses your location to show products near you.",
+        "NSCameraUsageDescription": "ExtraCash uses your camera to scan QR codes for payments."
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    }
+  }
+}
